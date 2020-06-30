@@ -61,11 +61,10 @@ export const Chart = ({data: { confirmed, recovered, deaths}, country}) => {
         ) : null
     );
 
-    console.log(country);
-
     return (
         <div className={styles.container}>
-            {country ? barChart : lineChart}      
+            {country ? barChart : lineChart}
         </div>
     )
+    
 }
